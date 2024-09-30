@@ -6,7 +6,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/hidetatz/kubecolor/color"
+	"github.com/jiqinga/kubecolor/color"
 )
 
 type VersionShortPrinter struct {

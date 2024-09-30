@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/hidetatz/kubecolor/color"
-	"github.com/hidetatz/kubecolor/kubectl"
+	"github.com/jiqinga/kubecolor/color"
+	"github.com/jiqinga/kubecolor/kubectl"
 )
 
 // KubectlOutputColoredPrinter is a printer to print data depending on
@@ -51,7 +51,6 @@ func (kp *KubectlOutputColoredPrinter) Print(r io.Reader, w io.Writer) {
 								return color.Yellow, true
 							}
 						}
-
 					}
 
 					return 0, false

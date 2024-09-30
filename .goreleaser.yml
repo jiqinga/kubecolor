@@ -37,9 +37,9 @@ archives:
 brews:
 - name: kubecolor
   tap:
-    owner: hidetatz
+    owner: jiqinga
     name: homebrew-tap
-  homepage: "https://github.com/hidetatz/kubecolor"
+  homepage: "https://github.com/jiqinga/kubecolor"
   description: "Colorize your kubectl output"
   folder: Formula
   install: |

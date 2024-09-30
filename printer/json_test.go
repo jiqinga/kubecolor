@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hidetatz/kubecolor/testutil"
+	"github.com/jiqinga/kubecolor/testutil"
 )
 
 func Test_JsonPrinter_Print(t *testing.T) {

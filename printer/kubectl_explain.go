@@ -6,7 +6,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/hidetatz/kubecolor/color"
+	"github.com/jiqinga/kubecolor/color"
 )
 
 // ExplainPrinter is a specific printer to print kubectl explain format.
@@ -76,7 +76,6 @@ func (ep *ExplainPrinter) printKeyVal(line string, w io.Writer) {
 
 func (ep *ExplainPrinter) printDescription(line string, w io.Writer) {
 	fmt.Fprintf(w, "%s%s\n", toSpaces(5), color.Apply(strings.TrimLeft(line, " "), getColorByValueType(line, ep.DarkBackground)))
-
 }
 
 func (ep *ExplainPrinter) printField(line string, w io.Writer) {

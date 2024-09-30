@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/hidetatz/kubecolor/color"
+	"github.com/jiqinga/kubecolor/color"
 )
 
 func Test_toSpaces(t *testing.T) {

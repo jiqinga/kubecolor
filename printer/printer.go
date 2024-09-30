@@ -5,8 +5,10 @@ import (
 	"regexp"
 )
 
-var singleOrMultipleSpaces = regexp.MustCompile("\\s{1,}")
-var spaces = regexp.MustCompile("\\s{2,}")
+var (
+	singleOrMultipleSpaces = regexp.MustCompile("\\s{1,}")
+	spaces                 = regexp.MustCompile("\\s{2,}")
+)
 
 // Printer can print something.
 // It reads data from r, then write them in w.

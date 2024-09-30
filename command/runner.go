@@ -9,9 +9,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/hidetatz/kubecolor/color"
-	"github.com/hidetatz/kubecolor/kubectl"
-	"github.com/hidetatz/kubecolor/printer"
+	"github.com/jiqinga/kubecolor/color"
+	"github.com/jiqinga/kubecolor/kubectl"
+	"github.com/jiqinga/kubecolor/printer"
 	"github.com/mattn/go-colorable"
 )
 

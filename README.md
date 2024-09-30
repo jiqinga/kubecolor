@@ -3,9 +3,9 @@
 <img width="140" alt="image" src="https://user-images.githubusercontent.com/78741582/194959205-5e11d177-1975-4d2c-bdfa-f1bc33234d91.png">
 
 
-![test](https://github.com/hidetatz/kubecolor/workflows/test/badge.svg?branch=main)
-[![Go Report Card](https://goreportcard.com/badge/github.com/hidetatz/kubecolor)](https://goreportcard.com/report/github.com/hidetatz/kubecolor)
-[![codecov](https://codecov.io/gh/hidetatz/kubecolor/branch/main/graph/badge.svg?token=k6ysAa5ghD)](https://codecov.io/gh/hidetatz/kubecolor/)
+![test](https://github.com/jiqinga/kubecolor/workflows/test/badge.svg?branch=main)
+[![Go Report Card](https://goreportcard.com/badge/github.com/jiqinga/kubecolor)](https://goreportcard.com/report/github.com/jiqinga/kubecolor)
+[![codecov](https://codecov.io/gh/jiqinga/kubecolor/branch/main/graph/badge.svg?token=k6ysAa5ghD)](https://codecov.io/gh/jiqinga/kubecolor/)
 
 Colorize your kubectl output
 
@@ -53,12 +53,12 @@ Additionally, if `kubectl` resulted an error, kubecolor just shows the error mes
 
 ### Download binary via GitHub release
 
-Go to [Release page](https://github.com/hidetatz/kubecolor/releases) then download the binary which fits your environment.
+Go to [Release page](https://github.com/jiqinga/kubecolor/releases) then download the binary which fits your environment.
 
 ### Mac and Linux users via Homebrew
 
 ```sh
-brew install hidetatz/tap/kubecolor
+brew install jiqinga/tap/kubecolor
 ```
 
 ### Manually via go command
@@ -66,13 +66,13 @@ brew install hidetatz/tap/kubecolor
 *Note: if you install kubecolor via go command, --kubecolor-version  might not work*
 
 ```sh
-go install github.com/hidetatz/kubecolor/cmd/kubecolor@latest
+go install github.com/jiqinga/kubecolor/cmd/kubecolor@latest
 ```
 
 If you are not using module mode (or if just above doesn't work), try below:
 
 ```sh
-go get -u github.com/hidetatz/kubecolor/cmd/kubecolor
+go get -u github.com/jiqinga/kubecolor/cmd/kubecolor
 ```
 
 ## Usage
@@ -206,4 +206,4 @@ MIT
 
 ## Author
 
-[@hidetatz](https://github.com/hidetatz)
+[@jiqinga](https://github.com/jiqinga)
