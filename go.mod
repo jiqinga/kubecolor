@@ -1,4 +1,4 @@
-module github.com/hidetatz/kubecolor
+module github.com/jiqinga/kubecolor
 
 go 1.19
 
