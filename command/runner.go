@@ -45,7 +45,7 @@ var getPrinters = func(subcommandInfo *kubectl.SubcommandInfo, darkBackground bo
 	}
 }
 
-func Run(args []string, version string) error {
+func Run(args []string, version string, env []string) error {
 	args, config := ResolveConfig(args)
 	shouldColorize, subcommandInfo := ResolveSubcommand(args, config)
 
@@ -56,7 +56,7 @@ func Run(args []string, version string) error {
 
 	cmd := exec.Command(config.KubectlCmd, args...)
 	cmd.Stdin = os.Stdin
-
+	cmd.Env = env
 	// when should not colorize, just run command and return
 	// TODO: right now, krew is unsupported by kubecolor but it should be.
 	if !shouldColorize {
