@@ -8,10 +8,11 @@ import (
 )
 
 // this is overridden on build time by GoReleaser
-var Version string = "unset"
+var Version = "unset"
 
 func main() {
-	err := command.Run(os.Args[1:], Version)
+	env := os.Environ()
+	err := command.Run(os.Args[1:], Version, env)
 	if err != nil {
 		var ke *command.KubectlError
 		if errors.As(err, &ke) {
