@@ -53,8 +53,12 @@ func Run(args []string, version string, env []string) error {
 		fmt.Fprintf(os.Stdout, "%s\n", version)
 		return nil
 	}
-
-	cmd := exec.Command(config.KubectlCmd, args...)
+	shell := os.Getenv("SHELL")
+	if shell == "" {
+		shell = "/bin/sh"
+	}
+	cmdargs := strings.Join(args, " ")
+	cmd := exec.Command(shell, "-c", config.KubectlCmd+" "+cmdargs)
 	cmd.Stdin = os.Stdin
 	cmd.Env = env
 	// when should not colorize, just run command and return
